@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nambi Krishna Murthy | Azure Data Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            neonCyan: '#00f7ff',
+            neonPurple: '#a855f7',
+            darkBg: '#090a0f',
+            cardBg: '#12141e',
+          },
+          boxShadow: {
+            neon: '0 0 25px -5px rgba(0, 247, 255, 0.3)',
+            neonHover: '0 0 35px -2px rgba(0, 247, 255, 0.6)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#090a0f] text-slate-200 font-sans antialiased selection:bg-neonCyan/20 selection:text-neonCyan">
+
+  <!-- Glow Backgrounds -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-cyan-500/10 blur-[130px] rounded-full"></div>
+    <div class="absolute top-[40%] -right-40 w-[600px] h-[500px] bg-purple-500/10 blur-[140px] rounded-full"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#090a0f]/80 border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+        <span class="text-neonCyan">&lt;</span>NKM<span class="text-neonCyan">/&gt;</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-neonCyan transition-colors">About</a>
+        <a href="#skills" class="hover:text-neonCyan transition-colors">Skills</a>
+        <a href="#experience" class="hover:text-neonCyan transition-colors">Experience</a>
+        <a href="#education" class="hover:text-neonCyan transition-colors">Education</a>
+      </div>
+      <a href="#contact" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-white/5 hover:bg-neonCyan hover:text-black border border-white/10 hover:border-neonCyan transition-all">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 pt-24 pb-20 md:pt-32">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-neonCyan text-xs font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span>
+      Available for Opportunities
+    </div>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-6">
+      Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan via-teal-300 to-neonPurple">Nambi Krishna Murthy</span>
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-300 font-medium mb-4">
+      Azure Data Engineer
+    </p>
+    <p class="max-w-2xl text-slate-400 text-base md:text-lg leading-relaxed mb-10">
+      Data Engineer with 3+ years of overall experience building scalable ETL/ELT pipelines, implementing Delta Lake architectures, and delivering analytics-ready datasets across the Microsoft Azure ecosystem.
+    </p>
+    <div class="flex flex-wrap items-center gap-4">
+      <a href="#experience" class="px-6 py-3 rounded-xl bg-neonCyan text-black font-semibold text-sm shadow-neon hover:shadow-neonHover hover:scale-[1.02] transition-all">
+        View Experience
+      </a>
+      <a href="https://linkedin.com/in/nambikrishnamurthy" target="_blank" class="px-6 py-3 rounded-xl bg-[#12141e] border border-white/10 text-white font-medium text-sm hover:border-neonCyan/50 hover:bg-white/5 transition-all">
+        LinkedIn Profile
+      </a>
+    </div>
+  </section>
+
+  <!-- Impact Counters -->
+  <section class="max-w-6xl mx-auto px-6 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-[#12141e] border border-white/5 relative overflow-hidden group hover:border-cyan-500/40 transition-all">
+        <div class="text-3xl font-bold text-neonCyan mb-1">100K+</div>
+        <div class="text-sm font-semibold text-white mb-1">Records Ingested Per Batch</div>
+        <div class="text-xs text-slate-400">Processed CSV pipelines into ADLS Gen2 using Databricks & PySpark.</div>
+      </div>
+      <div class="p-6 rounded-2xl bg-[#12141e] border border-white/5 relative overflow-hidden group hover:border-purple-500/40 transition-all">
+        <div class="text-3xl font-bold text-neonPurple mb-1">~30%</div>
+        <div class="text-sm font-semibold text-white mb-1">Reprocessing Reduction</div>
+        <div class="text-xs text-slate-400">Optimized incremental data loads via Delta Lake architecture.</div>
+      </div>
+      <div class="p-6 rounded-2xl bg-[#12141e] border border-white/5 relative overflow-hidden group hover:border-teal-400/40 transition-all">
+        <div class="text-3xl font-bold text-teal-400 mb-1">3+ Years</div>
+        <div class="text-sm font-semibold text-white mb-1">Data Engineering Expertise</div>
+        <div class="text-xs text-slate-400">Enterprise data integration, quality automation, and business intelligence.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="p-8 md:p-12 rounded-3xl bg-[#12141e] border border-white/5">
+      <h2 class="text-xs font-semibold tracking-widest text-neonCyan uppercase mb-2">Background</h2>
+      <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">About Me</h3>
+      <p class="text-slate-300 leading-relaxed mb-4">
+        Specializing in Azure cloud ecosystems, scalable data processing, and business intelligence solutions. Experienced in building robust ETL/ELT workflows using Azure Data Factory and Databricks, enforcing centralized governance with Unity Catalog, and optimizing storage using Delta Lake architectures.
+      </p>
+      <p class="text-slate-400 leading-relaxed">
+        Proven track record in improving data quality through automated validation and reconciliation frameworks, transforming raw enterprise data into analytics-ready datasets for reporting in Power BI and Synapse Analytics.
+      </p>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-xs font-semibold tracking-widest text-neonCyan uppercase mb-2">Capabilities</h2>
+    <h3 class="text-2xl md:text-3xl font-bold text-white mb-8">Technical Expertise</h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-[#12141e] border border-white/5 hover:border-white/10 transition-all">
+        <h4 class="text-white font-semibold text-base mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Cloud & Data Platforms
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Azure Data Factory</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Azure Databricks</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">ADLS Gen2</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Azure Synapse</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Azure Monitor</span>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-[#12141e] border border-white/5 hover:border-white/10 transition-all">
+        <h4 class="text-white font-semibold text-base mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-purple-400"></span> Data Processing & ETL
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">PySpark</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Delta Lake</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">ETL/ELT Pipelines</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Incremental Loads</span>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-[#12141e] border border-white/5 hover:border-white/10 transition-all">
+        <h4 class="text-white font-semibold text-base mb-4 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-teal-400"></span> Governance & Analytics
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Unity Catalog</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">RBAC Security</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">Power BI</span>
+          <span class="px-3 py-1 text-xs rounded-lg bg-white/5 border border-white/10 text-slate-300">SQL & Python</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-xs font-semibold tracking-widest text-neonCyan uppercase mb-2">History</h2>
+    <h3 class="text-2xl md:text-3xl font-bold text-white mb-10">Professional Experience</h3>
+
+    <div class="space-y-8">
+      <!-- Project 1 -->
+      <div class="p-8 rounded-2xl bg-[#12141e] border border-white/5 hover:border-cyan-500/20 transition-all">
+        <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+          <div>
+            <h4 class="text-xl font-bold text-white">Enterprise Data Integration and Reporting Platform</h4>
+            <div class="text-sm font-medium text-neonCyan">Associate Data Engineer • Toluna India Pvt Ltd</div>
+          </div>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white/5 text-slate-400 border border-white/10">Jan 2025 – Present</span>
+        </div>
+        <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside mb-6">
+          <li>Implemented Delta Lake architecture for incremental loads, historical tracking, and auditing.</li>
+          <li>Configured Unity Catalog to centrally manage catalogs, schemas, and tables, enabling role-based access control (RBAC).</li>
+          <li>Built PySpark-based transformation and validation frameworks to improve data quality and consistency.</li>
+          <li>Optimized ETL workflows, reducing data reprocessing effort through incremental loading strategies.</li>
+        </ul>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Azure Databricks</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Unity Catalog</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Delta Lake</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">PySpark</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">ADLS Gen2</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">SQL</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="p-8 rounded-2xl bg-[#12141e] border border-white/5 hover:border-cyan-500/20 transition-all">
+        <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+          <div>
+            <h4 class="text-xl font-bold text-white">Survey Data Processing and Analytics Platform</h4>
+            <div class="text-sm font-medium text-neonCyan">Associate Data Engineer • Toluna India Pvt Ltd</div>
+          </div>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white/5 text-slate-400 border border-white/10">Aug 2023 – Dec 2024</span>
+        </div>
+        <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside mb-6">
+          <li>Designed and implemented end-to-end ETL pipelines using Azure Data Factory and Databricks.</li>
+          <li>Developed scalable PySpark transformations for data cleansing, validation, and processing.</li>
+          <li>Loaded transformed datasets into Azure Synapse Analytics and built Power BI reporting dashboards.</li>
+          <li>Monitored and optimized pipeline executions using Azure Monitor.</li>
+        </ul>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Azure Data Factory</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Azure Databricks</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Azure Synapse</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Power BI</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="p-8 rounded-2xl bg-[#12141e] border border-white/5 hover:border-cyan-500/20 transition-all">
+        <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+          <div>
+            <h4 class="text-xl font-bold text-white">Survey Data Management and Reporting Support</h4>
+            <div class="text-sm font-medium text-neonCyan">Trainee Data Engineer • Toluna India Pvt Ltd</div>
+          </div>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white/5 text-slate-400 border border-white/10">Jan 2023 – Aug 2023</span>
+        </div>
+        <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside mb-6">
+          <li>Programmed survey logic and quotas using Confirmit.</li>
+          <li>Executed data validation scripts using Python and SQL for quality assurance.</li>
+          <li>Supported Power BI dashboard creation and business deliverables.</li>
+        </ul>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Python</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">SQL</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Confirmit</span>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Power BI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-xs font-semibold tracking-widest text-neonCyan uppercase mb-2">Academics</h2>
+    <h3 class="text-2xl md:text-3xl font-bold text-white mb-8">Education</h3>
+    <div class="p-6 rounded-2xl bg-[#12141e] border border-white/5 flex flex-wrap justify-between items-center gap-4">
+      <div>
+        <h4 class="text-lg font-bold text-white">Bachelor of Technology (B.Tech)</h4>
+        <p class="text-slate-400 text-sm">Jawaharlal Nehru Technological University Anantapur, India</p>
+      </div>
+      <span class="text-xs font-semibold px-3 py-1 rounded-full bg-white/5 text-slate-300 border border-white/10">Graduated 2021</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="p-8 md:p-14 rounded-3xl bg-gradient-to-b from-[#12141e] to-black border border-white/10 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Connect</h2>
+      <p class="text-slate-400 max-w-lg mx-auto mb-8 text-sm md:text-base">
+        Open to Azure Data Engineering opportunities, collaborations, and discussions on modern data architectures.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:nambikrishna2025@gmail.com" class="px-6 py-3 rounded-xl bg-neonCyan text-black font-semibold text-sm hover:scale-105 transition-all">
+          nambikrishna2025@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/nambikrishnamurthy" target="_blank" class="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-semibold text-sm hover:border-neonCyan transition-all">
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8 text-center text-xs text-slate-500">
+    © 2026 Nambi Krishna Murthy. All rights reserved.
+  </footer>
+
+</body>
+</html>
